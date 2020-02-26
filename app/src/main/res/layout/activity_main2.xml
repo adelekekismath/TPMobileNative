@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:title="Calculatrice"
+    tools:context=".Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_screen"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="monospace"
+            android:gravity="end"
+            android:text="0"
+            android:textColor="#318CE7"
+            android:textAlignment="viewEnd"
+            android:textSize="50dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/btn_plus_moins"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/btn_mod"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/btn_div"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="/" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn7"
+                android:onClick="Cliquer"
+                style="@style/DigitBtnStyle"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMoins"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/DigitBtnStyle"
+                android:onClick="Cliquer"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnFois"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn0"
+                android:layout_span="2"
+                android:textSize="20sp"
+                android:textColor="#293133"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/chiffre"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:onClick="Cliquer"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnEgal"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnDiv"
+                style="@style/signe"
+                android:onClick="Cliquer"
+                android:text="=" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

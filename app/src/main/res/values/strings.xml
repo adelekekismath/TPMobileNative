@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercice</string>
+    <string name="page_calculator">Calculatrice</string>
+    <string name="page_user">Liste des Utilisateurs</string>
+</resources>
