@@ -68,10 +68,8 @@ public class Main2Activity extends AppCompatActivity {
                 case "%":
                     this.AddSymbol(value,vue);
                     break;
-
             }
         }
-
     }
 
     public static boolean isNumeric(String str) {
